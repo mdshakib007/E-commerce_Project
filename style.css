@@ -6,7 +6,7 @@
     --padding: 0.5rem;
     --transition: all 0.3sec;
     --border-radious: 0.6rem;
-    --box-shadow: 0.1rem 0.2rem 0.8rem rgba(205, 202, 202, 0.3);
+    --box-shadow: 0.5rem 0.5rem 0.8rem rgba(205, 202, 202, 0.9);
 }
 
 
@@ -54,17 +54,18 @@ img{
 }
 
 .btn:hover{
-    background-color: var(--secondary-color);
+    background-color: blue;
+    color: white;
 }
 
-.cart{
+.card{
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radious);
     transition: var(--transition);
     padding: var(--padding);
 }
 
-.cart:hover{
+.card:hover{
     box-shadow: 0.1rem 0.2rem 0.8rem rgb(129, 128, 131);
 }
 
@@ -105,6 +106,10 @@ img{
 
 .orange{
     background-color: orange;
+}
+
+.text-center{
+    text-align: center;
 }
 
 
@@ -305,6 +310,203 @@ main{
 }
 
 
+
+/* product details here  */
+
+.product_details-left{
+    flex: 1;
+}
+
+.product_details-left img{
+    height: 20rem;
+    width: 30rem;
+}
+
+.product_details-right{
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    gap: 0.5rem;
+}
+
+
+/* cart designing */
+.cart{
+    padding: var(--padding);
+    gap: 1rem;
+}
+
+.cart .card{
+    margin-bottom: 1rem;
+}
+
+.cart_items{
+    flex: 1;
+    
+}
+.cart_payment{
+    flex: 1;
+
+}
+
+.cart_item-action{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart_item input{
+    flex: 0.1;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.cart_item-img{
+    flex: 0.2;
+    width: 15rem;
+    height: 10rem;
+}
+
+.cart_item-description{
+    flex: 0.4;
+}
+
+.cart_item-shipping{
+    color: green;
+    margin-top: 0.5rem;
+}
+
+.cart_item-action{
+    flex: 0.2;
+}
+
+.cart_payment-summary div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.cart_payment-btn{
+    width: 100%;
+}
+
+.card_payment-methods h2{
+    text-align: center;
+    margin: 1rem;
+}
+
+.card_payment-methods div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+/* registration and login form  */
+.register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    min-height: 60vh;
+}
+
+.register .card{
+    width: 40rem;
+    height: 20rem;
+}
+
+.form{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-control input{
+    height: 2rem;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.form-control:first-child{
+    margin-top: 2rem;
+}
+
+#terms{
+    height: 1rem;
+    width: 1rem;
+    margin-right: 0.5rem;
+}
+
+.register h2{
+    text-decoration: underline;
+}
+
+.contact-btn{
+    background-image: linear-gradient(45deg, rgb(123, 0, 255), rgb(255, 0, 212));
+    border-radius: 5px;
+    width: 30%;
+}
+
+
+
+/* profile styling */
+.profile{
+    flex-direction: column;
+    gap: 3rem;
+
+}
+
+.profile .card{
+    padding: var(--padding);
+    width: 30rem;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.profile-img{
+    width: 15vw;
+    border-radius: 50%;
+    border: 1px solid;
+}
+
+
+
+/* contact page  */
+.contact-section{
+    min-height: 52vh;
+}
+
+.contact-container{
+    margin-top: 5rem;
+}
+
+.contact-address{
+    flex: 1;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.contact_map{
+    width: 80%;
+}
+
+.form-control textarea{
+    flex: 0.9;
+    padding: var(--padding);
+    border: 1px solid;
+    resize: none;
+    height: 12vh;
+}
+
+
+
 /* footer  */
 
 .footer{
@@ -358,6 +560,16 @@ main{
         font-size: 2rem;
         padding: 10px;
     }
+
+    .cart_items, .cart_payment{
+        width: 90%;
+    }
+
+    .register .card{
+        width: 20rem;
+        height: 20rem;
+    }
+
 }
 
 
